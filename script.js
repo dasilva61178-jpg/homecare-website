@@ -4,3 +4,4 @@ document.getElementById('contact-form').addEventListener('submit', function(e){
   alert('Thank you! Your message has been sent.');
   this.reset();
 });
+
