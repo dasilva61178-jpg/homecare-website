@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You – HomeCare Plus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Thank You!</h1>
+    <p>Your message has been sent successfully.</p>
+  </div>
+</header>
+
+<section class="section">
+  <h2>We Will Contact You Soon</h2>
+  <p>
+    A HomeCare Plus care coordinator will reach out shortly.  
+    Thank you for trusting us with your care needs.
+  </p>
+
+  <br>
+  <a href="index.html" class="btn">Return Home</a>
+</section>
+
+<!-- CHATBOT -->
+<script src="//code.tidio.co/wcilbpczpkib8ficbsnms47h1nmwuvit.js" async></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function openChat() {
+      if (window.tidioChatApi) { window.tidioChatApi.open(); }
+      else { setTimeout(openChat, 500); }
+    }
+    openChat();
+  });
+</script>
+
+</body>
+</html>
