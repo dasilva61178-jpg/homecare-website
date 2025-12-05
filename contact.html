@@ -38,14 +38,32 @@
   <br>
 
   <!-- Working Contact Form -->
-  <form action="https://formsubmit.co/dasilva61178@gmail.com" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://dasilva61178-jpg.github.io/homecare-website/thankyou.html">
+ <form class="luxury-form" action="https://formsubmit.co/dasilva61178@gmail.com" method="POST">
 
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://dasilva61178-jpg.github.io/homecare-website/thankyou.html">
+
+  <div class="form-row">
+    <div class="input-group">
+      <input type="text" name="name" required>
+      <label>Your Name</label>
+    </div>
+
+    <div class="input-group">
+      <input type="email" name="email" required>
+      <label>Your Email</label>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <textarea name="message" required></textarea>
+    <label>Your Message</label>
+  </div>
+
+  <button type="submit" class="luxury-btn">Send Message</button>
+
+</form>
+
   </form>
 </section>
 
