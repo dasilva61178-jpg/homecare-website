@@ -72,7 +72,7 @@ h1, h2, h3 {
 ------------------------------ */
 
 .hero {
-  background: url('https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1500') 
+  background: url('https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1500')
               no-repeat center center/cover;
   height: 380px;
   display: flex;
@@ -262,4 +262,55 @@ footer {
     width: 95%;
   }
 }
+
+/* ------------------------------  
+   FADE-IN ANIMATIONS
+------------------------------ */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ------------------------------  
+   MOBILE NAV MENU
+------------------------------ */
+
+.menu-btn {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+
+  .menu-btn {
+    display: block;
+    color: #007BFF;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #eee;
+  }
+
+  .nav-links.nav-open {
+    display: flex;
+  }
+}
+
+
 
