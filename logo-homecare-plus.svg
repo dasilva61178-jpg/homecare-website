@@ -1,1 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#007BFF"/>
+      <stop offset="100%" stop-color="#003d82"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield -->
+  <path d="M32 4 L12 11 V29c0 14 9 22 20 26c11-4 20-12 20-26V11L32 4z"
+        fill="url(#shieldGradient)"/>
+  <!-- Heart -->
+  <path d="M32 34c-4-4-10-6-10-11a6 6 0 0 1 11-3a6 6 0 0 1 11 3c0 5-6 7-12 11z"
+        fill="#ffffff"/>
+  <!-- Cross -->
+  <rect x="30" y="21" width="4" height="14" fill="#007BFF"/>
+  <rect x="26" y="25" width="12" height="4" fill="#007BFF"/>
+</svg>
 
