@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – HomeCare Plus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">HomeCare Plus</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a class="active" href="contact.html">Contact</a></li>
+    <li><a class="btn" href="book.html">Book Now</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-content">
+    <h1>Contact Us</h1>
+    <p>We’re here to help and answer your questions.</p>
+  </div>
+</header>
+
+<section class="section">
+  <h2>Get In Touch</h2>
+
+  <p>📍 South Bend, Indiana</p>
+  <p>📞 +1 (574) 334-8022</p>
+  <p>📧 Email: dasilva61178@gmail.com</p>
+  <br>
+
+  <!-- Working Contact Form -->
+  <form action="https://formsubmit.co/dasilva61178@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://dasilva61178-jpg.github.io/homecare-website/thankyou.html">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 HomeCare Plus — All Rights Reserved</p>
+</footer>
+
+<!-- CHATBOT -->
+<script src="//code.tidio.co/wcilbpczpkib8ficbsnms47h1nmwuvit.js" async></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function openChat() {
+      if (window.tidioChatApi) { window.tidioChatApi.open(); }
+      else { setTimeout(openChat, 500); }
+    }
+    openChat();
+  });
+</script>
+
+</body>
+</html>
 
