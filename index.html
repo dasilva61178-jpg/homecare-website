@@ -50,7 +50,16 @@
   <p>📍 South Bend Indiana</p>
   <p>📞 +574-334-8022</p>
   <p>📧 Email: dasilva61178@gmail.com</p>
-  <form id="contact-form">
+
+  <!-- WORKING CONTACT FORM -->
+  <form action="https://formsubmit.co/dasilva61178@gmail.com" method="POST">
+
+    <!-- Disable CAPTCHA -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Redirect after submit -->
+    <input type="hidden" name="_next" value="https://dasilva61178-jpg.github.io/homecare-website/thankyou.html">
+
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" placeholder="Your Message" required></textarea>
@@ -70,17 +79,22 @@
 
 <script src="script.js"></script>
 
-<!-- Tidio Live Chat Widget -->
+<!-- Tidio Chat Widget -->
 <script src="//code.tidio.co/wcilbpczpkib8ficbsnms47h1nmwuvit.js" async></script>
 
 <!-- Auto-open chat on page load -->
 <script>
-  window.tidioChatApi = window.tidioChatApi || [];
-  window.tidioChatApi.push(['open']);
+  document.addEventListener("DOMContentLoaded", function () {
+    function openChat() {
+      if (window.tidioChatApi) {
+        window.tidioChatApi.open();
+      } else {
+        setTimeout(openChat, 500);
+      }
+    }
+    openChat();
+  });
 </script>
 
 </body>
 </html>
-
-
-
