@@ -116,7 +116,8 @@ h1, h2, h3 {
 .about,
 .services,
 .testimonials,
-.contact {
+.contact,
+.map {
   width: 85%;
   margin: 40px auto;
   background: #fff;
@@ -127,6 +128,22 @@ h1, h2, h3 {
 
 .section p {
   font-size: 17px;
+}
+
+/* ------------------------------
+   MAP SECTION
+------------------------------ */
+
+.map {
+  text-align: center;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  border: none;
+  margin-top: 20px;
 }
 
 /* ------------------------------
@@ -238,7 +255,7 @@ footer {
 }
 
 /* ------------------------------
-   RESPONSIVE DESIGN (MOBILE)
+   RESPONSIVE (MOBILE)
 ------------------------------ */
 
 @media (max-width: 768px) {
@@ -258,12 +275,13 @@ footer {
   .section,
   .about,
   .services,
-  .contact {
+  .contact,
+  .map {
     width: 95%;
   }
 }
 
-/* ------------------------------  
+/* ------------------------------
    FADE-IN ANIMATIONS
 ------------------------------ */
 
@@ -278,7 +296,7 @@ footer {
   transform: translateY(0);
 }
 
-/* ------------------------------  
+/* ------------------------------
    MOBILE NAV MENU
 ------------------------------ */
 
@@ -311,6 +329,4 @@ footer {
     display: flex;
   }
 }
-
-
 
