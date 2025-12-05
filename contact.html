@@ -1,83 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact – HomeCare Plus</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
-  <div class="logo">HomeCare Plus</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a class="active" href="contact.html">Contact</a></li>
-    <li><a class="btn" href="book.html">Book Now</a></li>
-  </ul>
+    <div class="logo">
+        <img src="logo-homecare-plus.svg" alt="HomeCare Plus Logo">
+        <span>HomeCare Plus</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a class="btn" href="book.html">Book Now</a></li>
+    </ul>
 </nav>
 
 <!-- HERO -->
 <header class="hero">
-  <div class="hero-content">
-    <h1>Contact Us</h1>
-    <p>We’re here to help and answer your questions.</p>
-  </div>
+    <div class="hero-content">
+        <h1>Contact Us</h1>
+        <p>We're here to assist you with compassionate, professional support.</p>
+    </div>
 </header>
 
-<section class="section">
-  <h2>Get In Touch</h2>
+<!-- CONTACT SECTION -->
+<section class="contact fade-in">
+    <h2 style="text-align:center; margin-bottom: 25px;">Get In Touch With Us</h2>
 
-  <p>📍 South Bend, Indiana</p>
-  <p>📞 +1 (574) 334-8022</p>
-  <p>📧 Email: dasilva61178@gmail.com</p>
-  <br>
+    <p style="text-align:center; font-size:18px; margin-bottom:40px;">
+        📍 South Bend, Indiana • 📞 (574) 334-8022 • ✉️ dasilva61178@gmail.com
+    </p>
 
-  <!-- Working Contact Form -->
- <form class="luxury-form" action="https://formsubmit.co/dasilva61178@gmail.com" method="POST">
+    <!-- Luxury Contact Form -->
+    <form class="luxury-form" action="https://formsubmit.co/dasilva61178@gmail.com" method="POST">
 
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://dasilva61178-jpg.github.io/homecare-website/thankyou.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://dasilva61178-jpg.github.io/homecare-website/thankyou.html">
 
-  <div class="form-row">
-    <div class="input-group">
-      <input type="text" name="name" required>
-      <label>Your Name</label>
-    </div>
+        <div class="form-row">
+            <div class="input-group">
+                <input type="text" name="name" placeholder=" " required />
+                <label>Your Name</label>
+            </div>
 
-    <div class="input-group">
-      <input type="email" name="email" required>
-      <label>Your Email</label>
-    </div>
-  </div>
+            <div class="input-group">
+                <input type="email" name="email" placeholder=" " required />
+                <label>Your Email</label>
+            </div>
+        </div>
 
-  <div class="input-group">
-    <textarea name="message" required></textarea>
-    <label>Your Message</label>
-  </div>
+        <div class="input-group">
+            <textarea name="message" placeholder=" " required></textarea>
+            <label>Your Message</label>
+        </div>
 
-  <button type="submit" class="luxury-btn">Send Message</button>
+        <button type="submit" class="luxury-btn">Send Message</button>
 
-</form>
-
-  </form>
+    </form>
 </section>
 
+<!-- MAP SECTION -->
+<section class="map fade-in">
+    <h2>Find Us</h2>
+    <iframe 
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-86.266%2C41.665%2C-86.245%2C41.685&layer=mapnik"
+      allowfullscreen
+    ></iframe>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  <p>© 2025 HomeCare Plus — All Rights Reserved</p>
+    <p>© 2025 HomeCare Plus — All Rights Reserved</p>
 </footer>
 
-<!-- CHATBOT -->
+<!-- Floating Call Button -->
+<a href="tel:+15743348022" class="call-float" aria-label="Call HomeCare Plus">📞</a>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+
+<!-- Tidio Chatbot -->
 <script src="//code.tidio.co/wcilbpczpkib8ficbsnms47h1nmwuvit.js" async></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     function openChat() {
-      if (window.tidioChatApi) { window.tidioChatApi.open(); }
-      else { setTimeout(openChat, 500); }
+      if (window.tidioChatApi) {
+        window.tidioChatApi.open();
+      } else {
+        setTimeout(openChat, 500);
+      }
     }
     openChat();
   });
